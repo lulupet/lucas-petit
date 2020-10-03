@@ -79,10 +79,17 @@ body {
     position: relative;
     border: solid 1px;
     border-radius: 10px;
-    height: 100px;
     padding: 5px;
     margin-bottom: 10px;
     background-color: rgba(0, 102, 153, 0.1);
+}
+
+.experience-wrapper {
+    height: 100px;
+}
+
+.formation-wrapper {
+    height: 300px;
 }
 
 .experience-title, .formation-school {

@@ -13,3 +13,7 @@ def countries():
 @app.route('/blog')
 def blog():
     return render_template('blog.html')
+
+@app.route('/blog/<id>')
+def article(id):
+    return render_template('articles/article_{}.html'.format(id))
