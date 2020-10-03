@@ -1,0 +1,126 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.body-content {
+    width: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header {
+    height: 100px;
+    background-color: #006699;
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.header-title {
+    font-size: 60px;
+    margin-right: 100px;
+}
+
+.header-menu {
+    float: right;
+    margin-right: 100px;
+}
+
+.resume-header, .countries-header, .blog-header {
+    display: inline-block;
+}
+
+.resume-header > a {
+    text-decoration: none;
+    color: white;
+}
+
+.countries-header > a {
+    text-decoration: none;
+    color: white;
+}
+
+.blog-header > a {
+    text-decoration: none;
+    color: white;
+}
+
+.resume-header > a:hover, .countries-header > a:hover, .blog-header > a:hover {
+    text-decoration: underline;
+}
+
+.side-bar {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.side-bar-title {
+    margin-bottom: 20px;
+}
+
+.side-wrapper {
+    display: inline-block;
+    width: 30px;
+}
+
+.side-wrapper img {
+    max-width: 100%;
+}
+
+.experience-wrapper, .formation-wrapper {
+    position: relative;
+    border: solid 1px;
+    border-radius: 10px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 102, 153, 0.1);
+}
+
+.experience-title, .formation-school {
+    font-weight: bold;
+}
+
+.experience-date, .formation-date {
+    position: absolute;
+    top: 5px;
+    right: 5px;; 
+}
+
+.formation-section {
+    width: calc(50% - 10px);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.skills-section {
+    width: calc(50% - 10px);
+    float: right;
+    padding: 5px
+}
+
+.coding-skills {
+    width: 50%;
+    display: inline-block;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(0, 102, 153, 0.1);
+}
+
+.language-skills {
+    width: calc(50% - 40px);
+    float: right;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(0, 102, 153, 0.1);
+}
