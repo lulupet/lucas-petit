@@ -84,14 +84,6 @@ body {
     background-color: rgba(0, 102, 153, 0.1);
 }
 
-.experience-wrapper {
-    height: 100px;
-}
-
-.formation-wrapper {
-    height: 300px;
-}
-
 .experience-title, .formation-school {
     font-weight: bold;
 }
@@ -130,4 +122,25 @@ body {
     border-radius: 10px;
     padding: 5px;
     background-color: rgba(0, 102, 153, 0.1);
+}
+
+.language-wrapper {
+    overflow: hidden;
+}
+
+.language-title {
+    width: min-content;
+    float: left;
+}
+
+.language-level {
+    width: min-content;
+    float: right;
+}
+
+.map-wrapper {
+    width: min-content;
+    margin: auto;
+    margin-top: 50px;
+    border-style: solid;
 }
