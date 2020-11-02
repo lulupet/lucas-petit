@@ -3,32 +3,34 @@
 <head>
 <title>Lucas Petit</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<link rel="shortcut icon" type="image/png" href="/static/images/favicon.png"/>
 </head>
 
 <body>
     <div class="header">
-        <div class="header-title">Lucas Petit</div>
+        <div class="header-title"><a href="/">Lucas Petit</a></div>
         <div class="header-menu">
             <div class="resume-header"><a href="/">Resume</a></div>
             <div class="countries-header"><a href="/countries">Countries</a></div>
             <div class="blog-header"><a href="/blog">Blog</a></div>
         </div>
     </div>
-    <div class="side-bar">
-        <div class="side-bar-title">
+    <div class="left-side-bar"></div>
+    <div class="right-side-bar">
+        <div class="right-side-bar-title">
             Check my profile on
         </div>
-        <div class="side-wrapper">
+        <div class="right-side-wrapper">
             <a href="https://github.com/lulupet" target="_blank">
                 <img src="/static/images/github.png">
             </a>
         </div>
-        <div class="side-wrapper">
+        <div class="right-side-wrapper">
             <a href="https://www.linkedin.com/in/lucas-petit-708993133/" target="_blank">
                 <img src="/static/images/linkedin.png">
             </a>
         </div>
-        <div class="side-wrapper">
+        <div class="right-side-wrapper">
             <a href="https://lichess.org/@/lulupet" target="_blank">
                 <img src="/static/images/lichess.png">
             </a>

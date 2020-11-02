@@ -8,14 +8,16 @@ body {
 }
 
 .body-content {
-    width: 80%;
+    width: 60%;
     padding-left: 10px;
     padding-right: 10px;
+    position: absolute;
+    left: calc(15% + 10px);
 }
 
 .header {
     height: 100px;
-    background-color: #006699;
+    background-color: #da7655;
     color: white;
     padding-top: 20px;
     margin-bottom: 20px;
@@ -25,6 +27,12 @@ body {
 .header-title {
     font-size: 60px;
     margin-right: 100px;
+    margin-left: calc(15% + 10px);
+}
+
+.header-title > a {
+    text-decoration: none;
+    color: white;
 }
 
 .header-menu {
@@ -55,23 +63,30 @@ body {
     text-decoration: underline;
 }
 
-.side-bar {
+.left-side-bar {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.right-side-bar {
     width: 15%;
     height: 100%;
     position: absolute;
     right: 0;
 }
 
-.side-bar-title {
+.right-side-bar-title {
     margin-bottom: 20px;
 }
 
-.side-wrapper {
+.right-side-wrapper {
     display: inline-block;
     width: 30px;
 }
 
-.side-wrapper img {
+.right-side-wrapper img {
     max-width: 100%;
 }
 
@@ -81,7 +96,7 @@ body {
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 10px;
-    background-color: rgba(0, 102, 153, 0.1);
+    background-color: rgba(218, 118, 85, 0.1);
 }
 
 .experience-title, .formation-school {
@@ -112,7 +127,7 @@ body {
     border: solid 1px;
     border-radius: 10px;
     padding: 5px;
-    background-color: rgba(0, 102, 153, 0.1);
+    background-color: rgba(218, 118, 85, 0.1);
 }
 
 .language-skills {
@@ -121,7 +136,7 @@ body {
     border: solid 1px;
     border-radius: 10px;
     padding: 5px;
-    background-color: rgba(0, 102, 153, 0.1);
+    background-color: rgba(218, 118, 85, 0.1);
 }
 
 .language-wrapper {
@@ -142,5 +157,5 @@ body {
     width: min-content;
     margin: auto;
     margin-top: 50px;
-    border-style: solid;
+    border: 1px solid #da7655;
 }
