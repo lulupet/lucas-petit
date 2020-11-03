@@ -90,6 +90,10 @@ body {
     max-width: 100%;
 }
 
+.experiences-section {
+    margin-bottom: 50px;
+}
+
 .experience-wrapper, .formation-wrapper {
     position: relative;
     border: solid 1px;
@@ -101,6 +105,8 @@ body {
 
 .experience-title, .formation-school {
     font-weight: bold;
+    max-width: 50%;
+    margin-bottom: 5px;
 }
 
 .experience-date, .formation-date {
@@ -118,7 +124,6 @@ body {
 .skills-section {
     width: calc(50% - 10px);
     float: right;
-    padding: 5px
 }
 
 .coding-skills {
@@ -128,6 +133,22 @@ body {
     border-radius: 10px;
     padding: 5px;
     background-color: rgba(218, 118, 85, 0.1);
+}
+
+.coding-skills-title, .language-skills-title {
+    margin-bottom: 15px;
+}
+
+.coding-skills-title > img {
+    width: 32px;
+    margin: auto;
+    display: block;
+}
+
+.language-skills-title > img {
+    width: 32px;
+    margin: auto;
+    display: block;
 }
 
 .language-skills {
@@ -158,4 +179,18 @@ body {
     margin: auto;
     margin-top: 50px;
     border: 1px solid #da7655;
+}
+
+.map-subtitle {
+    margin-top: 60px;
+}
+
+@media(max-width: 1000px) {
+    .formation-section {
+        width: 100%;
+    }
+    .skills-section {
+        width: 100%;
+        float: initial;
+    }
 }
