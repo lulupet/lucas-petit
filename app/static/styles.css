@@ -21,7 +21,6 @@ body {
     color: white;
     padding-top: 20px;
     margin-bottom: 20px;
-    padding-left: 5px;
 }
 
 .header-title {
@@ -91,7 +90,7 @@ body {
 }
 
 .experiences-section {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .experience-wrapper, .formation-wrapper {
@@ -182,15 +181,51 @@ body {
 }
 
 .map-subtitle {
+    width: 400px;
+    margin: auto;
     margin-top: 60px;
 }
 
 @media(max-width: 1000px) {
+
     .formation-section {
+        display: block;
         width: 100%;
+        margin-bottom: 20px;
     }
+
     .skills-section {
         width: 100%;
         float: initial;
+    }
+}
+
+
+@media(max-width: 700px) {
+    .header-title {
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .header-menu {
+        float: initial;
+        margin-right: 0;
+        margin-left: calc(50% - 84px);
+    }
+
+    .right-side-bar-title {
+        display: none;
+    }
+
+    .coding-skills {
+        float: initial;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .language-skills {
+        float: initial;
+        width: 100%;
     }
 }
