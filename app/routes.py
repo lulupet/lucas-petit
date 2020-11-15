@@ -14,10 +14,6 @@ def countries():
 def blog():
     return render_template('blog.html')
 
-@app.route('/covid')
-def article_covid():
-    return render_template('articles/article_covid.html')
-
 @app.route('/militaire')
 def article_militaire():
     return render_template('articles/article_militaire.html')

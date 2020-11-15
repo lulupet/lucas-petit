@@ -44,17 +44,14 @@ body {
 }
 
 .resume-header > a {
-    text-decoration: none;
     color: white;
 }
 
 .countries-header > a {
-    text-decoration: none;
     color: white;
 }
 
 .blog-header > a {
-    text-decoration: none;
     color: white;
 }
 
@@ -186,6 +183,22 @@ body {
     margin-top: 60px;
 }
 
+.blog-wrapper {
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(218, 118, 85, 0.1);
+}
+
+.blog-wrapper > a {
+    color: black;
+}
+
+.blog-date {
+    float: right;
+    font-style: italic;
+}
+
 @media(max-width: 1000px) {
 
     .formation-section {
@@ -197,6 +210,10 @@ body {
     .skills-section {
         width: 100%;
         float: initial;
+    }
+
+    .blog-date {
+        display: none;
     }
 }
 
