@@ -9,11 +9,3 @@ def home():
 @app.route('/countries')
 def countries():
     return render_template('countries.html')
-
-@app.route('/blog')
-def blog():
-    return render_template('blog.html')
-
-@app.route('/militaire')
-def article_militaire():
-    return render_template('articles/article_militaire.html')

@@ -39,7 +39,7 @@ body {
     margin-right: 100px;
 }
 
-.resume-header, .countries-header, .blog-header {
+.resume-header, .countries-header {
     display: inline-block;
 }
 
@@ -51,11 +51,7 @@ body {
     color: white;
 }
 
-.blog-header > a {
-    color: white;
-}
-
-.resume-header > a:hover, .countries-header > a:hover, .blog-header > a:hover {
+.resume-header > a:hover, .countries-header > a:hover {
     text-decoration: underline;
 }
 
@@ -183,22 +179,6 @@ body {
     margin-top: 60px;
 }
 
-.blog-wrapper {
-    border: solid 1px;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgba(218, 118, 85, 0.1);
-}
-
-.blog-wrapper > a {
-    color: black;
-}
-
-.blog-date {
-    float: right;
-    font-style: italic;
-}
-
 @media(max-width: 1000px) {
 
     .formation-section {
@@ -210,10 +190,6 @@ body {
     .skills-section {
         width: 100%;
         float: initial;
-    }
-
-    .blog-date {
-        display: none;
     }
 }
 
@@ -228,7 +204,7 @@ body {
     .header-menu {
         float: initial;
         margin-right: 0;
-        margin-left: calc(50% - 84px);
+        margin-left: calc(50% - 64px);
     }
 
     .right-side-bar-title {
