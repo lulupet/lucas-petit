@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="roadmap">
+    <div class="anchor-wrapper">
+        <div class="anchor-step anchor-step-zero" onclick="customScrollTo('zero')"><span class="anchor-step-number">0</span></div>
+        <div class="anchor-step anchor-step-one" onclick="customScrollTo('one')"><span class="anchor-step-number">1</span></div>
+        <div class="anchor-step anchor-step-two" onclick="customScrollTo('two')"><span class="anchor-step-number">2</span></div>
+        <div class="anchor-step anchor-step-three" onclick="customScrollTo('three')"><span class="anchor-step-number">3</span></div>
+        <div class="anchor-step anchor-step-four" onclick="customScrollTo('four')"><span class="anchor-step-number">4</span></div>
+        <div class="anchor-step anchor-step-five" onclick="customScrollTo('five')"><span class="anchor-step-number">5</span></div>
+        <div class="anchor-step anchor-step-six" onclick="customScrollTo('six')"><span class="anchor-step-number">6</span></div>
+        <div class="anchor-step anchor-step-seven" onclick="customScrollTo('seven')"><span class="anchor-step-number">7</span></div>
+        <div class="anchor-step anchor-step-eight" onclick="customScrollTo('eight')"><span class="anchor-step-number">8</span></div>
+        <div class="anchor-step anchor-step-nine" onclick="customScrollTo('nine')"><span class="anchor-step-number">9</span></div>
+        <div class="anchor-step anchor-step-ten" onclick="customScrollTo('ten')"><span class="anchor-step-number">10</span></div>
+        <div class="anchor-step anchor-step-eleven" onclick="customScrollTo('eleven')"><span class="anchor-step-number">11</span></div>
+        <div class="anchor-step anchor-step-twelve" onclick="customScrollTo('twelve')"><span class="anchor-step-number">12</span></div>
+        <div class="anchor-step anchor-step-thirteen" onclick="customScrollTo('thirteen')"><span class="anchor-step-number">13</span></div>
+        <div class="anchor-step anchor-step-forteen" onclick="customScrollTo('forteen')"><span class="anchor-step-number">14</span></div>
+        <div class="anchor-step anchor-step-fifteen" onclick="customScrollTo('fifteen')"><span class="anchor-step-number">15</span></div>
+        <div class="anchor-step anchor-step-sixteen" onclick="customScrollTo('sixteen')"><span class="anchor-step-number">16</span></div>
+    </div>
+    <div class="step step-zero">
+        <div class="step-title">Create an account on Lichess</div>
+        <div class="step-content">
+            You can create an account <a href="https://lichess.org/">here</a>.<br>
+            Why creating an online account at all?<br>
+            Many people start playing chess with an application (against a computer) and actually, you can rise to a pretty serious level of chess by dpoing so but it can be a bit boring.
+            When you play online, you can play against other people which makes it way more challenging, you can do tactics exercises, you can analyze your games, etc. Beside, you have an 
+            Elo rating that tells your level compared to other players so that your progression is measurable.<br>
+            Why Lichess?<br>
+            Many other websites exist. The most famous is chess.com but here are reasons why I prefer chess.com:
+            - Lichess is free and will always be (you can give them some money so that they can keep existing but their main interest is not profitability).
+            On chess.com You have to pay to get access to all of the features.
+            - There is no adds on Lichess, there are if you don't pay on chess.com.
+            - Lichess is developed by an open source community and chess.com is a company.
+            - Lichess is French and chess.com is American.
+        </div>
+    </div>
+    <div class="step step-one">
+        <div class="step-title">Learn the rules</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-two">
+        <div class="step-title">Learn elementary checkmates</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-three">
+        <div class="step-title">Learn the values of the pieces</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-four">
+        <div class="step-title">Learn the principles of the opening</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-five">
+        <div class="step-title">Learn the algebric notation</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-six">
+        <div class="step-title">Learn elementary tactics</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-seven">
+        <div class="step-title">Learn 5 checkmates in the opening</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-eight">
+        <div class="step-title">Build your openings</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-nine">
+        <div class="step-title">Learn intermediary checkmates</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-ten">
+        <div class="step-title">Learn the principles of strategy</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-eleven">
+        <div class="step-title">Improve your chekmating skills</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-twelve">
+        <div class="step-title">Learn the principles of common openings</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-thirteen">
+        <div class="step-title">Make some tactics exercises</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-forteen">
+        <div class="step-title">Learn 10 traps in the opening</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-fifteen">
+        <div class="step-title">Learn 10 great games</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-sixteen">
+        <div class="step-title">To go further</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+</div>
+<script>
+    function customScrollTo(className) {
+        var element_to_scroll_to = document.getElementsByClassName('step-' + className)[0];
+        element_to_scroll_to.scrollIntoView();
+    }
+</script>
+{% endblock %}

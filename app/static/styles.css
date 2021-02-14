@@ -39,19 +39,15 @@ body {
     margin-right: 100px;
 }
 
-.resume-header, .countries-header {
+.resume-header, .countries-header, .chess-roadmap-header {
     display: inline-block;
 }
 
-.resume-header > a {
+.resume-header > a, .countries-header > a, .chess-roadmap-header > a {
     color: white;
 }
 
-.countries-header > a {
-    color: white;
-}
-
-.resume-header > a:hover, .countries-header > a:hover {
+.resume-header > a:hover, .countries-header > a:hover, .chess-roadmap-header > a:hover {
     text-decoration: underline;
 }
 
@@ -177,6 +173,45 @@ body {
     width: 400px;
     margin: auto;
     margin-top: 60px;
+}
+
+.anchor-wrapper {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.step {
+    position: relative;
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(218, 118, 85, 0.1);
+}
+
+.step-title {
+    font-weight: bold;
+    max-width: 50%;
+    margin-bottom: 5px;
+}
+
+.anchor-step {
+    width: 40px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 50px;
+    background-color: rgba(218, 118, 85, 0.1);
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.anchor-step-number {
+    margin: auto;
+    display: block;
+    width: min-content;
+    margin-top: 11.5px;
+    font-weight: bold;
 }
 
 @media(max-width: 1000px) {
