@@ -9,3 +9,7 @@ def home():
 @app.route('/countries')
 def countries():
     return render_template('countries.html')
+
+@app.route('/chess-roadmap')
+def chess_roadmap():
+    return render_template('chess-roadmap.html')

@@ -1,0 +1,279 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="roadmap">
+    <div class="anchor-wrapper">
+        <div class="anchor-step anchor-step-zero" onclick="customScrollTo('zero')"><span class="anchor-step-number">0</span></div>
+        <div class="anchor-step anchor-step-one" onclick="customScrollTo('one')"><span class="anchor-step-number">1</span></div>
+        <div class="anchor-step anchor-step-two" onclick="customScrollTo('two')"><span class="anchor-step-number">2</span></div>
+        <div class="anchor-step anchor-step-three" onclick="customScrollTo('three')"><span class="anchor-step-number">3</span></div>
+        <div class="anchor-step anchor-step-four" onclick="customScrollTo('four')"><span class="anchor-step-number">4</span></div>
+        <div class="anchor-step anchor-step-five" onclick="customScrollTo('five')"><span class="anchor-step-number">5</span></div>
+        <div class="anchor-step anchor-step-six" onclick="customScrollTo('six')"><span class="anchor-step-number">6</span></div>
+        <div class="anchor-step anchor-step-seven" onclick="customScrollTo('seven')"><span class="anchor-step-number">7</span></div>
+        <div class="anchor-step anchor-step-eight" onclick="customScrollTo('eight')"><span class="anchor-step-number">8</span></div>
+        <div class="anchor-step anchor-step-nine" onclick="customScrollTo('nine')"><span class="anchor-step-number">9</span></div>
+        <div class="anchor-step anchor-step-ten" onclick="customScrollTo('ten')"><span class="anchor-step-number">10</span></div>
+        <div class="anchor-step anchor-step-eleven" onclick="customScrollTo('eleven')"><span class="anchor-step-number">11</span></div>
+        <div class="anchor-step anchor-step-twelve" onclick="customScrollTo('twelve')"><span class="anchor-step-number">12</span></div>
+        <div class="anchor-step anchor-step-thirteen" onclick="customScrollTo('thirteen')"><span class="anchor-step-number">13</span></div>
+        <div class="anchor-step anchor-step-forteen" onclick="customScrollTo('forteen')"><span class="anchor-step-number">14</span></div>
+        <div class="anchor-step anchor-step-fifteen" onclick="customScrollTo('fifteen')"><span class="anchor-step-number">15</span></div>
+        <div class="anchor-step anchor-step-sixteen" onclick="customScrollTo('sixteen')"><span class="anchor-step-number">16</span></div>
+    </div>
+    <div class="step step-zero">
+        <div class="step-title">Create an account on Lichess</div>
+        <div class="step-content">
+            You can create an account <a href="https://lichess.org/" target="_blank">here</a>.<br>
+            Why creating an online account at all?<br>
+            Many people start playing chess with an application (against a computer) and actually, you can rise to a pretty serious level of chess by dpoing so but it can be a bit boring.
+            When you play online, you can play against other people which makes it way more challenging, you can do tactics exercises, you can analyze your games, etc. Beside, you have an 
+            Elo rating that tells your level compared to other players so that your progression is measurable.<br>
+            Why Lichess?<br>
+            Many other websites exist. The most famous is Chess.com but here are reasons why I prefer Lichess:
+            <ul>
+                <li>Lichess is free and will always be (you can give them some money so that they can keep existing but their main interest is not profitability). On Chess.com, you have to pay to get access to all of the features.</li>
+                <li>There is no ad on Lichess, there are if you don't pay on Chess.com.</li>
+                <li>Lichess is developed by an open source community and Chess.com is a company.</li>
+                <li>Lichess is French and Chess.com is American.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="step step-one">
+        <div class="step-title">Learn the rules</div>
+        <div class="step-content">
+            Pretty obvious, right?<br>
+            Well, some people play dozens of chess games before fully understanding how castling works and what the en passant move is, so don't be like them and learn the rules from the beginning.
+            Here is a checklist:
+            <ul>
+                <li>how pieces move</li>
+                <li>castling</li>
+                <li>pawn promotion</li>
+                <li>en passant</li>
+                <li>check</li>
+                <li>checkmate</li>
+                <li>stalemate</li>
+                <li>the 50 moves rule</li>
+                <li>draw by insufficient material</li>
+            </ul>
+        </div>
+    </div>
+    <div class="step step-two">
+        <div class="step-title">Learn elementary checkmates</div>
+        <div class="step-content">
+            Alright, now you know that winning a game means checkmating your opponent so you have to know how to checkmate your opponent.
+            There are a lot of ways to do so but some are fundamental and will often occur during your games:
+            <ul>
+                <li>the ladder mate</li>
+                <li>the back-rank mate</li>
+                <li>any mate that consists in a queen stuck to the opponent's king with a piece defending the queen</li>
+            </ul>
+        </div>
+    </div>
+    <div class="step step-three">
+        <div class="step-title">Learn the values of the pieces</div>
+        <div class="step-content">
+            Now, it is important to understand that all pieces at chess are not worth the same.
+            If you already played some games, you already noticed that a queen is much more dangerous than a pawn or a bishop.
+            So when it comes to exchanging pieces, you always have to be aware about the value of the pieces that are being exchanged so that the exchange is not negative for you (well it can be if it is a sacrifice).
+            Here are the values of the pieces:
+            <ul>
+                <li>Pawn: 1</li>
+                <li>Knight: 3</li>
+                <li>Bishop: 3</li>
+                <li>Rook: 5</li>
+                <li>Queen: 9</li>
+            </ul>
+            Note that the king does not have any point because losing it means losing the game.
+        </div>
+    </div>
+    <div class="step step-four">
+        <div class="step-title">Learn the principles of the opening</div>
+        <div class="step-content">
+            Quite often, when you start playing chess, you have no idea about what to play at the beginning of a game.
+            Actually, even at the beginning, some moves are better than others so it is important that you know the principles of the opening so you kind of have an idea about what to play at the beginning of a game.
+            So remember, during the opening, you should:
+            <ul>
+                <li>Control the center of the board with your pieces</li>
+                <li>Develop your pieces (which means you have to take your bishops and knights out from their initial square so that they enter in the game to control more strategic squares)</li>
+                <li>Castle (remember that in general, castling long is a bit more unsafe for your king than castling short)</li>
+                <li>Not take your queen out too early. Indeed, in the previous step, you saw that it is your most powerful piece so it would be a pity to loose it because of a trap by your opponent during the opening.</li>
+                <li>Not move the same piece twice in a row (because it makes you "loose" time meanwhile you could develop another piece that was not developed yet)</li>
+                <li>Connect your rooks. That menas having your rooks "looking at each other" because you took out your bishops and your knight, because you castled and because you took your queen out (but not too early)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="step step-five">
+        <div class="step-title">Learn the algebric notation</div>
+        <div class="step-content">
+            That will be fundamental in your chess journey as it is the way to describe a chess game without having to draw a chess board for every position.
+            Every square has a name that indicates its column and row.
+            <div id="board">
+                <div class="file" id="file-1">1</div>
+                <div class="file" id="file-2">2</div>
+                <div class="file" id="file-3">3</div>
+                <div class="file" id="file-4">4</div>
+                <div class="file" id="file-5">5</div>
+                <div class="file" id="file-6">6</div>
+                <div class="file" id="file-7">7</div>
+                <div class="file" id="file-8">8</div>
+                <div class="column" id="column-a">a</div>
+                <div class="square" id="a1">a1</div>
+                <div class="square" id="a2">a2</div>
+                <div class="square" id="a3">a3</div>
+                <div class="square" id="a4">a4</div>
+                <div class="square" id="a5">a5</div>
+                <div class="square" id="a6">a6</div>
+                <div class="square" id="a7">a7</div>
+                <div class="square" id="a8">a8</div>
+                <div class="column" id="column-b">b</div>
+                <div class="square" id="b1">b1</div>
+                <div class="square" id="b2">b2</div>
+                <div class="square" id="b3">b3</div>
+                <div class="square" id="b4">b4</div>
+                <div class="square" id="b5">b5</div>
+                <div class="square" id="b6">b6</div>
+                <div class="square" id="b7">b7</div>
+                <div class="square" id="b8">b8</div>
+                <div class="column" id="column-c">c</div>
+                <div class="square" id="c1">c1</div>
+                <div class="square" id="c2">c2</div>
+                <div class="square" id="c3">c3</div>
+                <div class="square" id="c4">c4</div>
+                <div class="square" id="c5">c5</div>
+                <div class="square" id="c6">c6</div>
+                <div class="square" id="c7">c7</div>
+                <div class="square" id="c8">c8</div>
+                <div class="column" id="column-d">d</div>
+                <div class="square" id="d1">d1</div>
+                <div class="square" id="d2">d2</div>
+                <div class="square" id="d3">d3</div>
+                <div class="square" id="d4">d4</div>
+                <div class="square" id="d5">d5</div>
+                <div class="square" id="d6">d6</div>
+                <div class="square" id="d7">d7</div>
+                <div class="square" id="d8">d8</div>
+                <div class="column" id="column-e">e</div>
+                <div class="square" id="e1">e1</div>
+                <div class="square" id="e2">e2</div>
+                <div class="square" id="e3">e3</div>
+                <div class="square" id="e4">e4</div>
+                <div class="square" id="e5">e5</div>
+                <div class="square" id="e6">e6</div>
+                <div class="square" id="e7">e7</div>
+                <div class="square" id="e8">e8</div>
+                <div class="column" id="column-f">f</div>
+                <div class="square" id="f1">f1</div>
+                <div class="square" id="f2">f2</div>
+                <div class="square" id="f3">f3</div>
+                <div class="square" id="f4">f4</div>
+                <div class="square" id="f5">f5</div>
+                <div class="square" id="f6">f6</div>
+                <div class="square" id="f7">f7</div>
+                <div class="square" id="f8">f8</div>
+                <div class="column" id="column-g">g</div>
+                <div class="square" id="g1">g1</div>
+                <div class="square" id="g2">g2</div>
+                <div class="square" id="g3">g3</div>
+                <div class="square" id="g4">g4</div>
+                <div class="square" id="g5">g5</div>
+                <div class="square" id="g6">g6</div>
+                <div class="square" id="g7">g7</div>
+                <div class="square" id="g8">g8</div>
+                <div class="column" id="column-h">h</div>
+                <div class="square" id="h1">h1</div>
+                <div class="square" id="h2">h2</div>
+                <div class="square" id="h3">h3</div>
+                <div class="square" id="h4">h4</div>
+                <div class="square" id="h5">h5</div>
+                <div class="square" id="h6">h6</div>
+                <div class="square" id="h7">h7</div>
+                <div class="square" id="h8">h8</div>
+            </div>
+            Then, each piece has a sign:
+            <ul>
+                <li>Pawn: no sign</li>
+                <li>Bishop: B</li>
+                <li>Knight: C</li>
+                <li>Rook: R</li>
+                <li>Queen: Q</li>
+                <li>King: K</li>
+            </ul>
+            So, Cf4 means that a knight is going on the f3 square and c4 means that a pawn is going on the c4 square.
+            Then, to say that a piece is taking another piece, you write an "x". So that, Cxf7 means that a Knight is taking a piece on the f7 square.
+            When a pawn takes another piece, you just write its column, so that dxc4 means that a pawn on the d column takes a piece on the c4 square. 
+        </div>
+    </div>
+    <div class="step step-six">
+        <div class="step-title">Learn elementary tactics</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-seven">
+        <div class="step-title">Learn 5 checkmates in the opening</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-eight">
+        <div class="step-title">Build your openings</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-nine">
+        <div class="step-title">Learn intermediary checkmates</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-ten">
+        <div class="step-title">Learn the principles of strategy</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-eleven">
+        <div class="step-title">Improve your chekmating skills</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-twelve">
+        <div class="step-title">Learn the principles of common openings</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-thirteen">
+        <div class="step-title">Make some tactics exercises</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-forteen">
+        <div class="step-title">Learn 10 traps in the opening</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-fifteen">
+        <div class="step-title">Learn 10 great games</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+    <div class="step step-sixteen">
+        <div class="step-title">To go further</div>
+        <div class="step-content">
+
+        </div>
+    </div>
+</div>
+<script>
+    function customScrollTo(className) {
+        var element_to_scroll_to = document.getElementsByClassName('step-' + className)[0];
+        element_to_scroll_to.scrollIntoView();
+    }
+</script>
+{% endblock %}
